@@ -25,3 +25,8 @@ document.addEventListener("DOMContentLoaded", function() {
     menu.style.display = "";
   });
 });
+
+function changeColorNow() {
+  var picker = document.getElementById("style-picker");
+
+  var colors = {
