@@ -5,3 +5,117 @@
     <title>Modul 1 - Komplettering</title>
     <link href="style.css" rel="stylesheet" />
   </head>
+ <body>
+    <div id="wrapper">
+      <nav>
+        <div id="menu-btn">Meny</div>
+        <ul>
+          <li>
+            <a href="index.html">Start</a>
+          </li>
+          <li>
+            <a href="images.html">Bilder</a>
+          </li>
+          <li>
+            <a href="bootstrap.html">Bootstrap</a>
+          </li>
+          <li>
+            <select id="style-picker">
+              <option value="standard">Standard</option>
+              <option value="blue">Blå</option>
+              <option value="red">Röd</option>
+              <option value="green">Grön</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+
+      <header>
+        <article>
+          <img src="images/logo.jpg" alt="Logo" />
+          <h1>Modul 1</h1>
+          <aside>
+            <h2>Komplettering</h2>
+            <p>Andre</p>
+          </aside>
+        </article>
+      </header>
+
+      <main id="bootstrap">
+        <div class="row">
+          <div class="col-12 col-lg-4 mb-4">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" />
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="col-12 col-lg-4 mb-4">
+            <ul class="list-group">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A fourth item</li>
+              <li class="list-group-item">And a fifth one</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4 mb-4">
+            <div class="card">
+              <img src="images/placeholder.jpg" class="card-img-top" alt="Image placeholder" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
+                <a href="bootstrap.html" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="carouselExample" class="carousel slide mb-4">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/logo.jpg" class="d-block mx-auto carousel-logo" alt="Logo, bild ett" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/logo.jpg" class="d-block mx-auto carousel-logo" alt="Logo, bild två" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/logo.jpg" class="d-block mx-auto carousel-logo" alt="Logo, bild tre" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </main>
+      <aside></aside>
+      <footer>Sidfot för inlämningsuppgift</footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
