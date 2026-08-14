@@ -30,3 +30,16 @@ function changeColorNow() {
   var picker = document.getElementById("style-picker");
 
   var colors = {
+    standard: "#faf1f2",
+    blue: "#dce9f9",
+    red: "#f9dcdc",
+    green: "#ddf3dd"
+  };
+
+  var color = colors[picker.value] || colors.standard;
+  document.body.style.backgroundColor = color;
+
+  try {
+    localStorage.setItem("styleChoice", picker.value);
+  } catch (e) {}
+}
