@@ -30,10 +30,10 @@ function changeColorNow() {
   var picker = document.getElementById("style-picker");
 
   var colors = {
-    standard: "#faf1f2",
-    blue: "#dce9f9",
-    red: "#f9dcdc",
-    green: "#ddf3dd"
+    standard: "#f7f4f480",
+    blue: "#0070f8",
+    red: "#ff0000",
+    green: "#029902"
   };
 
   var color = colors[picker.value] || colors.standard;
