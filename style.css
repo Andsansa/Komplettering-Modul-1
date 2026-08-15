@@ -109,14 +109,13 @@ footer { background-color: #000000; color: #ffffff; text-align: center; padding:
   #index, #images, #bootstrap { width: auto; margin: 0; padding-bottom: 0; }
   #index article { gap: 20px; padding: 30px 10px; }
   #index article img { width: 165px; }
-  #index h3 { font-size: 0.95rem; }
-  #index p { font-size: 0.78rem; }
+  #index h3 { font-size: 1rem; }
+  #index p { font-size: 0.75rem;}
   #images { grid-template-columns: repeat(2, 1fr); }
   .logo-slide { height: 240px; }
   footer { font-size: 0.75rem; }
 }
 
-/*Mobil/Tablet version (ongoing)*/
 @media (max-width: 767px) {
   #wrapper { display: flex; flex-direction: column; }
   header { order: 1; }
@@ -126,12 +125,12 @@ footer { background-color: #000000; color: #ffffff; text-align: center; padding:
 
   header article { padding: 30px 15px 20px; align-items: center; text-align: center; gap: 8px; }
   header article img { width: 85px; }
-  header h1, header h2 { font-size: 1.05rem; }
+  header h1, header h2 { font-size: 1rem; }
   header aside { text-align: center; }
 
   #menu-btn { display: block; background-color: #000000; color: #ffffff; text-align: center; padding: 14px; }
   nav ul { display: none; padding: 15px 15px 0; }
-  nav ul li a, #style-picker { font-size: 0.95rem; }
+  nav ul li a, #style-picker { font-size: 1rem; }
 
   #index article, #index article:nth-child(even) { flex-direction: column; text-align: center; gap: 15px; }
   #index article img { width: 65%; margin: 0 auto; }
