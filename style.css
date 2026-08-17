@@ -35,9 +35,9 @@ nav ul li a {
 } 
 nav ul li a:hover, #style-picker:hover { background-color: #faf1f2; }
 #style-picker {
-  padding: 17px 25px 17px 90px;
+  padding: 18px 90px;
   font: bold 1rem "Century Gothic", Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #faf1f2;
   border: none;
   cursor: pointer;
 }
@@ -62,9 +62,9 @@ header aside p { font-size: 0.8rem; }
   align-items: center;
   gap: 35px;
   padding: 45px 15px;
-  border-top: 4px solid #a9a9a9;
+  border-top: 4px solid #faf1f2
 }
-#index article:last-child { border-bottom: 4px solid #a9a9a9; }
+#index article:last-child { border-bottom: 4px solid #faf1f2; }
 #index article:nth-child(even) { flex-direction: row-reverse; }
 #index article img { width: 230px; flex-shrink: 0; border-radius: 50%; }
 #index h3 { font-size: 1.05rem; margin-bottom: 6px; }
@@ -82,14 +82,14 @@ header aside p { font-size: 0.8rem; }
   padding: 5px;
 }
 #bootstrap .card-img-top { border-radius: 50%; padding: 10px; }
-.logo-slide { height: 320px; width: auto; border-radius: 50%; }
+.carousel-logo,.logo-slide { height: 360px; width: auto; border-radius: 50%; }
 .carousel-control-prev-icon, .carousel-control-next-icon { filter: invert(50%); }
 
 footer { background-color: #000000; color: #faf1f2; text-align: center; padding: 12px; font-size: 0.85rem; }
 @media (max-width: 990px) {
   #wrapper {
     grid-template-columns: 135px 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr;
     grid-template-areas: "header main" "nav main" "footer main";
   }
   header { background-color: #faf1f2; }
@@ -112,8 +112,8 @@ footer { background-color: #000000; color: #faf1f2; text-align: center; padding:
   #index h3 { font-size: 1rem; }
   #index p { font-size: 0.75rem;}
   #images { grid-template-columns: repeat(2, 1fr); }
-  .logo-slide { height: 240px; }
-  footer { font-size: 0.75rem; }
+  .carousel-logo,.logo-slide { height: 300px; }
+  footer { font-size: 0.75rem; align-self: end; position: sticky; bottom: 0; }
 }
 
 @media (max-width: 767px) {
@@ -135,5 +135,5 @@ footer { background-color: #000000; color: #faf1f2; text-align: center; padding:
   #index article, #index article:nth-child(even) { flex-direction: column; text-align: center; gap: 15px; }
   #index article img { width: 65%; margin: 0 auto; }
   #images { grid-template-columns: 1fr; }
-  .logo-slide { height: 180px; }
+  .carousel-logo,.logo-slide { height: 220px; }
 }
