@@ -30,7 +30,7 @@ function changeColorNow() {
   var picker = document.getElementById("style-picker");
 
   var colors = {
-    standard: "#f7f4f480",
+    standard: "#faf1f2",
     blue: "#0070f8",
     red: "#ff0000",
     green: "#029902"
