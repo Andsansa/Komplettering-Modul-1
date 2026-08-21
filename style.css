@@ -46,7 +46,7 @@ header article {
   width: 70%;
   margin: 35px auto;
   padding: 22px 30px;
-  background-color: #faf1f2;
+  background-color: #fefefe;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -121,7 +121,7 @@ footer { background-color: #000000; color: #faf1f2; text-align: center; padding:
   header { order: 1; }
   nav { order: 2; padding-bottom: 15px; }
   main { order: 3; flex: 1; padding: 15px; }
-  footer { order: 4; }
+  footer { order: 4; align-self: stretch; }
 
   header article { padding: 30px 15px 20px; align-items: center; text-align: center; gap: 8px; }
   header article img { width: 85px; }
